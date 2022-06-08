@@ -1,0 +1,10 @@
+{
+  "name": "root",
+  "private": true,
+  "npmClient": "npm",
+  "devDependencies": {
+    "@types/node": "^17.0.41",
+    "lerna": "^5.1.0",
+    "tsup": "^6.1.0"
+  }
+}

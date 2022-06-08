@@ -1,0 +1,36 @@
+{
+  "name": "@core/battle",
+  "version": "0.1.0",
+  "description": "The battle engine",
+  "author": "s3r0s4pi3ns <s3r0s4pi3ns@protonmail.com>",
+  "homepage": "https://github.com/s3r0s4pi3ns/BinaryBattles#readme",
+  "license": "ISC",
+  "main": "dist/battle.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s3r0s4pi3ns/BinaryBattles.git"
+  },
+  "tsup": {
+    "entry": [
+      "lib/battle.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true
+  },
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/s3r0s4pi3ns/BinaryBattles/issues"
+  }
+}
