@@ -13,7 +13,12 @@ const World: React.FC<WorldProps> = ({
 }): JSX.Element => {
   return (
     <div className="game-container">
-      <canvas ref={canvasRef} width={width} height={height}></canvas>
+      <canvas
+        className="pixel-art"
+        ref={canvasRef}
+        width={width}
+        height={height}
+      ></canvas>
     </div>
   );
 };

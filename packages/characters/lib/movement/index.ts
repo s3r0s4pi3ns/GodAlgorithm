@@ -9,7 +9,13 @@ export type MovementKeys = {
     [key: string]: DIRECTION;
 };
 
-export const movementKeys: MovementKeys = {
+export type Point2D = { x: number, y: number };
+export interface Moveable {
+    direction: Point2D;
+    speed: Point2D;
+}
+
+export const keyboardKeyToDirectionMapper: MovementKeys = {
     ArrowUp: DIRECTION.UP,
     ArrowLeft: DIRECTION.LEFT,
     ArrowRight: DIRECTION.RIGHT,

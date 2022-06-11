@@ -7,7 +7,6 @@ function App() {
 
   useEffect(() => {
     if (canvasRef.current) {
-      console.log("entro");
       canvasCtxRef.current = canvasRef.current.getContext("2d");
 
       let ctx = canvasCtxRef.current;
