@@ -1,7 +1,12 @@
 'use strict';
 
-module.exports = factories;
+import { OPERATING_SYSTEM, JOB_TITLE } from "./enums";
+import { LaptopFactory } from './factories';
 
-function factories() {
-    // TODO
+
+module.exports = {
+    ENUMS: { OPERATING_SYSTEM, JOB_TITLE },
+    FACTORIES: {
+        LaptopFactory
+    }
 }

@@ -11,7 +11,7 @@
   "author": "s3r0s4pi3ns <s3r0s4pi3ns@protonmail.com>",
   "homepage": "https://github.com/s3r0s4pi3ns/BinaryBattles#readme",
   "license": "ISC",
-  "main": "dist/characters.js",
+  "main": "dist/index.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -25,7 +25,7 @@
   },
   "tsup": {
     "entry": [
-      "lib/characters.ts"
+      "lib/index.ts"
     ],
     "typings": true,
     "splitting": false,

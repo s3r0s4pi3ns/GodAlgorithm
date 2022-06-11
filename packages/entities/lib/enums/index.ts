@@ -1,17 +1,11 @@
-export const enum OPERATING_SYSTEM {
+export enum OPERATING_SYSTEM {
     MAC = "MAC",
     WINDOWS = "WINDOWS",
     LINUX = "LINUX",
 }
 
-export const enum DIRECTION {
-    UP = "UP",
-    LEFT = "LEFT",
-    RIGHT = "RIGHT",
-    DOWN = "DOWN",
-}
 
-export const enum JOB_TITLE {
+export enum JOB_TITLE {
     JUNIOR = "JUNIOR",
     MEDIER = "MEDIER",
     SENIOR = "SENIOR",
@@ -19,24 +13,4 @@ export const enum JOB_TITLE {
     SITE_RELIABILITY_ENGINEER = "SITE RELIABILITY ENGINEER",
     TECH_LEAD = "TECH_LEAD",
     CTO = "CTO",
-}
-
-export const enum DANGER_METER {
-    BALANCED = "BALANCED",
-    UNPREDICTABLE = "UNPREDICTABLE",
-    TEAM_PLAYER = "TEAM_PLAYER",
-    AGGRESIVE = "AGGRESIVE",
-    DEFENSIVE = "DEFENSIVE",
-    TECHNICAL = "TECHNICAL",
-}
-
-export const enum ACTION_TYPES {
-    NETWORK = "NETWORK",
-    ITEM = "ITEM",
-    GIT = "GIT",
-    ATTACK = "ATTACK",
-    DEFENSE = "DEFENSE",
-    SURRENDER = "SURRENDER",
-    BATTERY = "BATTERY",
-    GLOBAL = "GLOBAL",
 }

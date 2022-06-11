@@ -1,5 +1,3 @@
-import { OPERATING_SYSTEM } from "./enums";
-
 export type Network = {
     device: string;
     connected: boolean;
@@ -23,15 +21,3 @@ export type HardDrive = {
     type: 'HDD' | 'SSD'
 }
 
-export interface Laptop {
-    battery: number;
-    durability: number;
-    powerUsage: number;
-    operatingSystem: OPERATING_SYSTEM;
-    cores: number;
-    graphicCard: string;
-    processor: string;
-    hardDrive: HardDrive
-    network: Network;
-    description?: string;
-}
