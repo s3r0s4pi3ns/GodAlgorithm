@@ -5,7 +5,7 @@ export enum DIRECTION {
     DOWN = "DOWN",
 }
 
-type MovementKeys = {
+export type MovementKeys = {
     [key: string]: DIRECTION;
 };
 
