@@ -11,15 +11,12 @@ function App() {
       canvasCtxRef.current = canvasRef.current.getContext("2d");
 
       let ctx = canvasCtxRef.current;
-      ctx!.beginPath();
-      ctx!.arc(95, 50, 40, 0, 2 * Math.PI);
-      ctx!.stroke();
     }
   }, [canvasRef]);
 
   return (
     <>
-      <World canvasRef={canvasRef} width={500} height={380} />
+      <World canvasRef={canvasRef} />
     </>
   );
 }

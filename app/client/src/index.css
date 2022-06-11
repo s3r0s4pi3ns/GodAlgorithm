@@ -1,5 +1,8 @@
 body {
+  background: #333;
+  padding: 0;
   margin: 0;
+  overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -9,9 +12,10 @@ body {
 
 .game-container {
   position: relative;
-  background: #d9f4ff;
-  width: 352px;
-  height: 198px;
+  width: 100%;
+  height: auto;
+  max-width: 352px;
+  max-height: 198px;
   margin: 0 auto;
   outline: 1px solid #fff;
 
