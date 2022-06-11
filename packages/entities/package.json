@@ -1,11 +1,16 @@
 {
-  "name": "@binary-battles/battle",
+  "name": "@binary-battles/entities",
   "version": "0.1.0",
-  "description": "The battle engine",
+  "description": "The factories helpers to create new entities",
+  "keywords": [
+    "entities",
+    "factories",
+    "laptop"
+  ],
   "author": "s3r0s4pi3ns <s3r0s4pi3ns@protonmail.com>",
   "homepage": "https://github.com/s3r0s4pi3ns/BinaryBattles#readme",
   "license": "ISC",
-  "main": "dist/battle.js",
+  "main": "lib/factories.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -17,17 +22,7 @@
     "type": "git",
     "url": "git+https://github.com/s3r0s4pi3ns/BinaryBattles.git"
   },
-  "tsup": {
-    "entry": [
-      "lib/battle.ts"
-    ],
-    "splitting": false,
-    "sourcemap": true,
-    "clean": true
-  },
   "scripts": {
-    "build": "tsup",
-    "watch": "tsup --watch",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {

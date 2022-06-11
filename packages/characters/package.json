@@ -1,5 +1,5 @@
 {
-  "name": "@core/characters",
+  "name": "@binary-battles/movement",
   "version": "0.1.0",
   "description": "The entities logic that represent characters and players in the game",
   "keywords": [
