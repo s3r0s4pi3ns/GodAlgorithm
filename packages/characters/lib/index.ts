@@ -1,6 +1,7 @@
-'use strict';
+'use strict'
 
-import { movementKeys } from './movement'
+import { createKeyboard, getDirection, } from './movement/keyboard'
 
-module.exports = { movementKeys };
+module.exports = { createKeyboard, getDirection };
+
 

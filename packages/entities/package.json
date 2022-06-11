@@ -11,7 +11,7 @@
   "homepage": "https://github.com/s3r0s4pi3ns/BinaryBattles#readme",
   "license": "ISC",
   "main": "dist/index.js",
-  "typings": "lib/types/index.d.ts",
+  "typings": "dist/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -30,7 +30,8 @@
     "typings": true,
     "splitting": false,
     "sourcemap": true,
-    "clean": true
+    "clean": true,
+    "minify": true
   },
   "scripts": {
     "build": "tsup",

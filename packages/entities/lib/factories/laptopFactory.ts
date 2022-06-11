@@ -3,7 +3,7 @@ import { ILaptop } from "../entities";
 import { OPERATING_SYSTEM } from "../enums";
 import { Factory } from "./factory";
 
-class LaptopFactory implements Factory<ILaptop> {
+export default class LaptopFactory implements Factory<ILaptop> {
     create(params: Partial<ILaptop> = {}): ILaptop {
         return {
             battery: faker.datatype.number(100),
@@ -48,5 +48,3 @@ class LaptopFactory implements Factory<ILaptop> {
         };
     }
 }
-
-export default LaptopFactory;

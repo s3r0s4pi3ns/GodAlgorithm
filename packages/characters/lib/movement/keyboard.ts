@@ -1,14 +1,24 @@
-import { DIRECTION, keyboardKeyToDirectionMapper, Point2D } from ".";
+import { DIRECTION, Keyboard, MovementKeys, Point2D } from "../types";
 
-export interface Keyboard {
-    getLastPressedKey(): string;
-}
+export const keyboardKeyToDirectionMapper: MovementKeys = {
+    ArrowUp: DIRECTION.UP,
+    ArrowLeft: DIRECTION.LEFT,
+    ArrowRight: DIRECTION.RIGHT,
+    ArrowDown: DIRECTION.DOWN,
+
+    w: DIRECTION.UP,
+    a: DIRECTION.LEFT,
+    d: DIRECTION.RIGHT,
+    s: DIRECTION.DOWN,
+};
 
 export const createKeyboard = (
     eventTarget: Window,
-    supportedKeys: string[],
+    supportedKeys?: string[]
 ): Keyboard => {
     let lastPressedKey = '';
+
+    supportedKeys = supportedKeys || Object.keys(keyboardKeyToDirectionMapper)
 
     const updateKey = (key: string) => {
         if (supportedKeys.includes(key) && key !== lastPressedKey) {
