@@ -1,4 +1,6 @@
 import { useEffect, useRef } from "react";
+import { LaptopFactory, PlayerFactory } from "../Core/Entities/factories";
+import { canvasPositionDebugger } from "../utils";
 
 export const BattleField = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -7,6 +9,10 @@ export const BattleField = () => {
   useEffect(() => {
     if (canvasRef.current) {
       canvasCtxRef.current = canvasRef.current.getContext("2d");
+
+      if (process.env.NODE_ENV !== "production") {
+        canvasPositionDebugger(canvasRef.current);
+      }
 
       let ctx = canvasCtxRef.current;
 
@@ -18,6 +24,9 @@ export const BattleField = () => {
       };
     }
   }, [canvasRef]);
+
+  console.log(new PlayerFactory().create());
+  console.log(new LaptopFactory().create());
 
   return (
     <div className="col-start-2 col-span-2 border-black">

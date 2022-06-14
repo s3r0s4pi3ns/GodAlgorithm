@@ -1,6 +1,5 @@
 import { faker } from '@faker-js/faker';
-import { ILaptop } from "../entities";
-import { OPERATING_SYSTEM } from "../enums";
+import { ILaptop, OPERATING_SYSTEM } from '../types';
 import { Factory } from "./factory";
 
 export default class LaptopFactory implements Factory<ILaptop> {
@@ -45,6 +44,7 @@ export default class LaptopFactory implements Factory<ILaptop> {
                 },
             },
             ...params,
-        };
+        }
     }
 }
+

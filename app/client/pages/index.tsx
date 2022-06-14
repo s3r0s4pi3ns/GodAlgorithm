@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { ActionMenu } from "./components/ActionMenu";
-import { BattleField } from "./components/BattleField";
-import { Chat } from "./components/Chat";
-import { MainGrid } from "./components/MainGrid";
+import { ActionMenu } from "../components/ActionMenu";
+import { BattleField } from "../components/BattleField";
+import { Chat } from "../components/Chat";
+import { MainGrid } from "../components/MainGrid";
 
 const Home: NextPage = () => {
   return (

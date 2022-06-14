@@ -18,10 +18,8 @@ export const createKeyboard = (
 ): Keyboard => {
     let lastPressedKey = '';
 
-    supportedKeys = supportedKeys || Object.keys(keyboardKeyToDirectionMapper)
-
     const updateKey = (key: string) => {
-        if (supportedKeys.includes(key) && key !== lastPressedKey) {
+        if ((supportedKeys || Object.keys(keyboardKeyToDirectionMapper)).includes(key) && key !== lastPressedKey) {
             lastPressedKey = key;
         }
     };
