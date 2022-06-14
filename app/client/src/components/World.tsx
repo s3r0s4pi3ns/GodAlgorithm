@@ -8,18 +8,16 @@ type WorldProps = {
 
 const World: React.FC<WorldProps> = ({
   canvasRef,
-  width = 352,
-  height = 198,
+  width = 1024,
+  height = 576,
 }): JSX.Element => {
   return (
-    <div className="game-container">
-      <canvas
-        className="pixel-art"
-        ref={canvasRef}
-        width={width}
-        height={height}
-      ></canvas>
-    </div>
+    <canvas
+      className="pixel-art"
+      ref={canvasRef}
+      width={width}
+      height={height}
+    ></canvas>
   );
 };
 

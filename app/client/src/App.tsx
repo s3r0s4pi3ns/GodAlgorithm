@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { World } from "./components/World";
+import TileCourseMap from "./assets/maps/tiles-course-map.png";
 
 function App() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -7,9 +8,18 @@ function App() {
 
   useEffect(() => {
     if (canvasRef.current) {
-      canvasCtxRef.current = canvasRef.current.getContext("2d");
+      canvasCtxRef.current = canvasRef.current.getContext("2d", {
+        alpha: false,
+      });
 
       let ctx = canvasCtxRef.current;
+
+      const map = new Image();
+      map.src = TileCourseMap;
+
+      map.onload = (event: Event) => {
+        return ctx?.drawImage(map, -2000, -400);
+      };
     }
   }, [canvasRef]);
 

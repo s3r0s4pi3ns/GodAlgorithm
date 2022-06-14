@@ -1,6 +1,6 @@
 import { Keyboard, Point2D } from "./types";
 
-declare module "@binary-battles/characters" {
+declare module "@god-algorithm-battles/characters" {
     export function createKeyboard(
         eventTarget: Window,
         supportedKeys?: string[]): Keyboard;

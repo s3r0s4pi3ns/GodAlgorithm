@@ -13,14 +13,10 @@ body {
 
 .game-container {
   position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 352px;
-  max-height: 198px;
   margin: 0 auto;
   outline: 1px solid #fff;
 
-  transform: scale(3) translateY(50%);
+  /**transform: scale(3) translateY(50%);*/
 }
 
 .pixel-art {

@@ -1,9 +1,9 @@
 {
-  "name": "@binary-battles/app-client",
+  "name": "@god-algorithm-battles/app-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@binary-battles/characters": "^0.1.0",
+    "@god-algorithm-battles/characters": "^0.1.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
